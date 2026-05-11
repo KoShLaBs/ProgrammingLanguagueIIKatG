@@ -1,21 +1,33 @@
 # CLASE EMPLEADO - CLASES HIJAS
 class Empleado:
     def __init__(self, nombre, edad, identificacion):
-        self.nombre = nombre
-        self.edad = edad
+        self.__nombre = nombre
+        self.__edad = edad
         self.__identificacion = identificacion
         
     ## Métodos getter y setter para la variable privada __identificacion    
     def set__identificacion(self, nueva_identificacion):
         self.__identificacion = nueva_identificacion  
+
+    def set_nombre(self, nuevo_nombre):
+        self.__nombre = nuevo_nombre
+
+    def set_edad(self, nueva_edad):
+        self.__edad = nueva_edad
+
+    def get_nombre(self):
+        return self.__nombre
+    
+    def get_edad(self):
+        return self.__edad
     
     def get__identificacion(self):
         return self.__identificacion
 
     def mostrar_informacion(self):
-        print(f"Nombre: {self.nombre}\n")
-        print(f"Edad: {self.edad}\n")
-        print(f"Identificación: {self.get__identificacion()}\n")
+        print(f"Nombre: {self.get_nombre()}")
+        print(f"Edad: {self.get_edad()}")
+        print(f"Identificación: {self.get__identificacion()}")
 
 class EmpleadoDeveloper(Empleado):
     def __init__(self, nombre, edad, identificacion, cargo):
@@ -38,8 +50,8 @@ class EmpleadoDeveloper(Empleado):
 
     def mostrar_informacion(self):
         super().mostrar_informacion()
-        print(f"Cargo: {self.cargo}\n")
-        print(f"Tareas Operativas: {self.get_tareas_operativas()}\n")
+        print(f"Cargo: {self.cargo}")
+        print(f"Tareas Operativas: {self.get_tareas_operativas()}")
         print(f"Lenguajes de Programación: {self.get_lenguajes_programacion()}\n")
 
 class EmpleadoQA(Empleado):
@@ -63,6 +75,6 @@ class EmpleadoQA(Empleado):
 
     def mostrar_informacion(self):
         super().mostrar_informacion()
-        print(f"Cargo: {self.cargo}\n")
-        print(f"Tareas Operativas: {self.get_tareas_operativas()}\n")
+        print(f"Cargo: {self.cargo}")
+        print(f"Tareas Operativas: {self.get_tareas_operativas()}")
         print(f"Herramientas de Testing: {self.get_herramientas_testing()}\n")
