@@ -1,3 +1,4 @@
+//REALIZADO POR KATHERYNN GOMEZ
 class Empleado{
     #salario;
     constructor(nombre, edad){

@@ -1,3 +1,5 @@
+//REALIZADO POR KATHERYNN GOMEZ
+
 const prompt = require('prompt-sync')();
 
 class Persona{
