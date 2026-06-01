@@ -15,3 +15,5 @@ Proyecto Final
 ## ✅ Objetivo
 
 Aplicativo que busca facilitar el ahorro através de billeteras virtuales vinculados con cuentas bancarias, permitiendo poner una meta, limite de ahorro y fecha. 
+
+![Diagrama de secuencia](https://github.com/KoShLaBs/ProgrammingLanguagueIIKatG/blob/proyectofinal/diagrams/sequence.mmd)
