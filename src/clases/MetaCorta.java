@@ -5,8 +5,8 @@ public class MetaCorta extends Meta {
     private String fecha_limite;
 
     // Constructor
-    public MetaCorta(String descripcion, int monto_deseado, String fecha_limite) {
-        super(descripcion, monto_deseado);
+    public MetaCorta(String descripcion, int monto_deseado, String fecha_limite, char icono) {
+        super(descripcion, monto_deseado, icono, "Sin iniciar");
         this.fecha_limite = fecha_limite;
     }
 

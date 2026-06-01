@@ -9,9 +9,11 @@ public class Meta {
     private int monto_agregado;
 
     // Constructor
-    public Meta(String descripcion, int monto_deseado) {
+    public Meta(String descripcion, int monto_deseado, char icono, String estado) {
         this.descripcion = descripcion;
         this.monto_deseado = monto_deseado;
+        this.icono = icono;
+        this.estado = estado;
         this.monto_agregado = 0;
     }
 

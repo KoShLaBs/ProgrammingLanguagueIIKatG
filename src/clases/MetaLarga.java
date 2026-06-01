@@ -5,8 +5,8 @@ public class MetaLarga extends Meta {
     private String fecha_limite;
 
     // Constructor
-    public MetaLarga(String descripcion, int monto_deseado, String fecha_limite) {
-        super(descripcion, monto_deseado);
+    public MetaLarga(String descripcion, int monto_deseado, String fecha_limite, char icono) {
+        super(descripcion, monto_deseado, icono, "Sin iniciar");
         this.fecha_limite = fecha_limite;
     }
 
